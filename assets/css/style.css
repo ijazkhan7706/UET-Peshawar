@@ -6,6 +6,8 @@
 }
 
 #for_scroll {
+    /*position: absolute;*/
+    /*top: 0;*/
     z-index: 111;
     width: 100%;
     transition: 0.5s
@@ -48,16 +50,6 @@
     .menu-list li:last-child a {
         margin-bottom: 10px;
     }
-}
-
-.carousel-item {
-    position: relative;
-}
-
-.carousel-caption {
-    position: absolute;
-    top: 60%;
-    /*transform: translateY(-50%);*/
 }
 
 .carousel-caption h1 {
