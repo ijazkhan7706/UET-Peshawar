@@ -5,6 +5,10 @@
     --secondary-color: #7F4C1B;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #for_scroll {
     z-index: 111;
     width: 100%;
@@ -112,6 +116,31 @@
     color: var(--primary-color) !important;
 }
 
+.contact ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact ul span {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.contact .icon {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+
+.contact input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--primary-color)
+}
+
 .footer {
 
     background-color: var(--secondary-color);
@@ -149,4 +178,12 @@
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     font-family: poppins;
+}
+
+.list li {
+    margin-bottom: 15px;
+}
+
+.list li::marker {
+    color: var(--primary-color);
 }
