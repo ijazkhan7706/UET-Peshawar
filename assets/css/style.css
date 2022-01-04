@@ -6,8 +6,6 @@
 }
 
 #for_scroll {
-    /*position: absolute;*/
-    /*top: 0;*/
     z-index: 111;
     width: 100%;
     transition: 0.5s
@@ -148,7 +146,7 @@
 }
 
 .footer-bottom p {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     font-family: poppins;
 }
