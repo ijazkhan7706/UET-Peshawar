@@ -16,7 +16,8 @@ html {
 #for_scroll {
     z-index: 111;
     width: 100%;
-    transition: 0.5s
+    transition: 0.5s;
+    box-shadow: 0 0px 5px var(--secondary-color);
 }
 
 #logo {
@@ -58,12 +59,6 @@ html {
     }
 }
 
-.carousel-caption h1 {
-    padding: 10px 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: inline-block;
-}
-
 .menu-list a {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -71,7 +66,7 @@ html {
 }
 
 .menu-list li>a:hover {
-    color: #915014 !important;
+    color: var(--primary-color) !important;
     transform: scale(1.03);
 }
 
@@ -85,6 +80,13 @@ html {
 .menu-list li:last-child a:hover {
     color: #fff !important;
     background-color: var(--primary-color);
+}
+
+.carousel-caption h1 {
+    display: inline-block;
+    padding: 10px 2rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .heading {
@@ -122,11 +124,17 @@ html {
 
 .news-update {
     overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3)
 }
 
-.news-update:hover .news-image {
+.news-update:hover {
     transform: scale(1.02);
+}
+
+.news-update:hover .news-image {
+    transform: scale(1.04);
 }
 
 .side-bar {
@@ -192,7 +200,6 @@ html {
     margin-right: 10px;
 }
 
-
 .contact input[type="submit"] {
     background-color: var(--secondary-color);
     color: #fff;
@@ -203,7 +210,6 @@ html {
 }
 
 .footer {
-
     background-color: var(--secondary-color);
 }
 
@@ -224,6 +230,7 @@ html {
 
 .footer ul li {
     margin-bottom: 10px !important;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer ul a {
